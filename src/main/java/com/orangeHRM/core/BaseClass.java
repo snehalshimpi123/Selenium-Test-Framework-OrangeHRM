@@ -32,9 +32,10 @@ public class BaseClass {
 	public void setup() throws InterruptedException {
 		//reportFolder = System.getProperty("user.dir")+"/reports/"+BaseHelper.TimeStamp();
 		
-		reportFolder = System.getProperty("user.dir")+"/reports/";
+		reportFolder = System.getProperty("user.dir")+"/resources/";
 		BaseHelper.createFolder(reportFolder);
-		ExtentReportUtils.initialize(reportFolder+"/WebAutomation.html");
+		ExtentReportUtils.initialize(reportFolder+"/ExtentReport.html");
+	
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
