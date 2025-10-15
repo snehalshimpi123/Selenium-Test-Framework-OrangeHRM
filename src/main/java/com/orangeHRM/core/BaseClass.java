@@ -30,7 +30,9 @@ public class BaseClass {
 	
 	@BeforeSuite(alwaysRun = true)
 	public void setup() throws InterruptedException {
-		reportFolder = System.getProperty("user.dir")+"/reports/"+BaseHelper.TimeStamp();
+		//reportFolder = System.getProperty("user.dir")+"/reports/"+BaseHelper.TimeStamp();
+		
+		reportFolder = System.getProperty("user.dir")+"/reports/";
 		BaseHelper.createFolder(reportFolder);
 		ExtentReportUtils.initialize(reportFolder+"/WebAutomation.html");
 		

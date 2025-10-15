@@ -24,6 +24,7 @@ public class ExtentReportUtils {
 		if(extentReport==null) {
 			
 			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(path);
+			
 			extentReport = new ExtentReports();
 			extentReport.attachReporter(sparkReporter);
 			
