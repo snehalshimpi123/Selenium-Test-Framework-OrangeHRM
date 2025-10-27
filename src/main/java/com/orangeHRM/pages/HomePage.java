@@ -14,7 +14,7 @@ public class HomePage{
 
 	WebDriver driver;
 	public HomePage(ChromeDriver driver) {
-		//this.driver = driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 

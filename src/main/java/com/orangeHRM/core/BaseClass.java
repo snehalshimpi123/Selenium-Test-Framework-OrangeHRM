@@ -38,6 +38,7 @@ public class BaseClass {
 	
 		
 		ChromeOptions options = new ChromeOptions();
+		
 		options.addArguments("--headless");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--disable-notifications");
